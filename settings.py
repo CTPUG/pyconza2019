@@ -33,8 +33,8 @@ WAFER_MENUS += (
     # "url": reverse_lazy("wafer_page", args=("venue",))},
     #{"menu": "tickets", "label": _("Tickets"),
     # "items": []},
-    #{"menu": "sponsors", "label": _("Sponsors"),
-    # "items": []},
+    {"menu": "sponsors", "label": _("Sponsors"),
+     "items": []},
     #{"menu": "talks", "label": _("Talks"),
     # "items": [
     #     {"name": "schedule", "label": _("Schedule"),
@@ -91,7 +91,7 @@ MARKITUP_FILTER = ('markdown.markdown', {
         'markdown.extensions.tables',
     #    'mdx_variables',
     ],
-    #'extension_configs': {
+    'extension_configs': {
     #    'mdx_variables': {
     #        'vars': {
     #            'main_conference_tickets_sold': main_conference_tickets_sold,
