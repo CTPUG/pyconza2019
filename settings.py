@@ -106,3 +106,24 @@ MARKITUP_FILTER = ('markdown.markdown', {
 JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'
 
 WAFER_TALKS_OPEN = True
+
+# Set the timezone to the conference timezone
+USE_TZ = True
+TIME_ZONE = 'Africa/Johannesburg'
+
+# Default static and media locations - we rely on apache to redirect accordingly
+# These are named to not clash with the repo contents
+STATIC_ROOT = os.path.join(pyconzadir, 'localstatic')
+
+MEDIA_ROOT = os.path.join(pyconzadir, 'localmedia')
+
+# Registration isn't open yet
+WAFER_REGISTRATION_OPEN = False
+WAFER_REGISTRATION_MODE = 'ticket'
+
+# Point static mirror away from the default, which is relative to the
+# wafer package
+BUILD_DIR = os.path.join(pyconzadir, 'mirror')
+
+# Will be needed for the static site generation
+# WAFER_HIDE_LOGIN = True
