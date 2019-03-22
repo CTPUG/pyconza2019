@@ -35,17 +35,17 @@ WAFER_MENUS += (
     # "items": []},
     {"menu": "sponsors", "label": _("Sponsors"),
      "items": []},
-    #{"menu": "talks", "label": _("Talks"),
-    # "items": [
+    {"menu": "talks", "label": _("Talks"),
+     "items": [
     #     {"name": "schedule", "label": _("Schedule"),
     #      "url": reverse_lazy("wafer_full_schedule")},
-    #     {"name": "accepted-talks", "label": _("Accepted Talks"),
-    #      "url": reverse_lazy("wafer_users_talks")},
-    #     {"name": "speakers", "label": _("Speakers"),
-    #      "url": reverse_lazy("wafer_talks_speakers")},
-    #    ]},
-    #{"menu": "news", "label": _("News"),
-    # "items": []},
+         {"name": "accepted-talks", "label": _("Accepted Talks"),
+          "url": reverse_lazy("wafer_users_talks")},
+         {"name": "speakers", "label": _("Speakers"),
+          "url": reverse_lazy("wafer_talks_speakers")},
+        ]},
+    {"menu": "news", "label": _("News"),
+     "items": []},
     {"menu": "previous-pycons", "label": _("Past PyConZAs"),
      "items": [
          {"name": "pyconza2012", "label": _("PyConZA 2012"),
@@ -105,8 +105,8 @@ MARKITUP_FILTER = ('markdown.markdown', {
 # Use HTTPS jquery URL so it's accessible on HTTPS pages (e.g. editing a talk)
 JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'
 
-# Talks submissions aren't open yet
-WAFER_TALKS_OPEN = False
+# Talks submissions are open
+WAFER_TALKS_OPEN = True
 
 # Set the timezone to the conference timezone
 USE_TZ = True
