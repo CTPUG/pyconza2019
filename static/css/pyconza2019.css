@@ -9,6 +9,10 @@ darker  - lighter
 #191a24 - #6c6d73 (grey)
 */
 
+html {
+    background: black;
+}
+
 body {
   font-size: 16px;
   font-family: 'Source Sans Pro';
