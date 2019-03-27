@@ -1,3 +1,14 @@
+/* PALETTE
+
+darker  - lighter
+
+#002642 - #5c7486 (blue)
+#840032 - #a54569 (magenta)
+#e59500 - #ecb145 (yellow)
+#e5dada - #eee7e7 (cream)
+#191a24 - #6c6d73 (grey)
+*/
+
 body {
   font-size: 16px;
   font-family: 'Source Sans Pro';
@@ -5,13 +16,13 @@ body {
 
 #wrap {
   min-height: 100%;  /* put the background behind the clouds -- see CLOUDS further down */
-  background: url('../img/clouds_bottom.png'), url('../img/clouds_top.png'), url('../img/pattern.png'), #fcfffc;
+  background: url("clouds_bottom.png"), url("clouds_top.png"), url("pattern.png"), #e5dada;
   background-repeat: no-repeat, no-repeat, repeat, repeat;
   background-position: bottom center, top center, 0 0, 0 0;
 }
 
 #main {
-  color: #fcfffc;
+  color: #e5dada;
   padding-top: 1em;
 }
 
@@ -41,11 +52,11 @@ body {
   margin: 0;
   padding: 0 24px;
   line-height: 47px;
-  background: #040f0f;
+  background: #191a24;
   font-family: 'Alegreya';
   font-size: 30px;
   font-weight: bold;
-  color: #ff8c28;
+  color: #e59500;
 }
 
 #main section {
@@ -53,13 +64,13 @@ body {
   float: left;
   padding: 0 10px 10px 10px;
   color: black;
-  background: #fcfffc;
+  background: #e5dada;
   margin-bottom: 1em;
-  background: #fcfffc;
+  background: #e5dada;
 }
 
 #main section section {
-  background: #eee;
+  background: #eee7e7;
 }
 
 #main section h1,
@@ -67,11 +78,12 @@ body {
   margin: 10px 0 0;
   padding: 0 24px;
   line-height: 47px;
-  background: #040f0f;
+  background-color: #191a24;
+  background-image: linear-gradient(to left, #840032, #191a24);
   font-family: 'Alegreya';
   font-size: 30px;
   font-weight: bold;
-  color: #ff8c28;
+  color: #e59500;
   margin-bottom: 0.5em;
 }
 
@@ -88,44 +100,44 @@ body {
 }
 
 #main table tr {
-  border-bottom: 2px solid #fcfffc;
+  border-bottom: 2px solid #e5dada;
 }
 
 #main table th,
 table td {
   padding: 8px 12px;
   text-align: left;
-  border-right: 2px solid #fcfffc;
-  background: #8cbd94;
+  border-right: 2px solid #e5dada;
+  background: #6c6d73;
   font-size: 16px;
-  color: #040f0f;
+  color: #191a24;
 }
 
 #main table td.title {
-  background: #2d3a3a;
+  background: #6c6d73;
   font-family: 'Alegreya';
   font-size: 16px;
-  color: #fcfffc;
+  color: #e5dada;
   line-height: 26px;
 }
 
 #main table th {
   font-family: 'Alegreya';
-  background: #ff8c28;
-  color: #040f0f;
+  background: #e59500;
+  color: #191a24;
   font-weight: normal;
   vertical-align: top;
 }
 
 /* Make links on the table header visbile */
 #main table th a {
-  color: #040f0f;
+  color: #191a24;
 }
 
 #main table th span {
   font-size: 16px;
   font-weight: bold;
-  color: #040f0f;
+  color: #191a24;
   line-height: 26px;
 }
 
@@ -144,7 +156,7 @@ table td {
   text-align: center;
   font-family: 'Alegreya';
   font-size: 30px;
-  color: #ffa04f;
+  color: #ecb145;
   padding-bottom: 15px;
 }
 
@@ -152,41 +164,34 @@ table td {
   text-align: center;
   font-family: 'Alegreya';
   font-size: 20px;
-  color: #fcfffc;
+  color: #e5dada;
   line-height: 22px;
   padding-bottom: 20px;
 }
 
 #credits a {
-  color: #ff8c28;
+  color: #e59500;
 }
-
-/* Schedule highlight colours:
- Blue-ish: #BDD6EC
- Pink-ish: #EBBDEC
- Redbrown-ish: #ECD3BD
- Green-ish: #BFECBD
- */
 
 /* Highlights */
 
 #main table td.schedule {
-  background: #bdd9c1;
+  background: #5c7486;
 }
 
 #main table td.schedule-break {
-  background: #d8dbdb;
+  background: #e5dada;
 }
 
 #main table td.schedule-keynote {
-  background: #ffc28f;
+  background: #ecb145;
 }
 
 /* Use a darker background for unavailable venues in the schedule */
 #main table td.unavailable {
-  background: #444444;
+  background: #002642;
   font-size: 16px;
-  color: #040f0f;
+  color: #191a24;
   line-height: 26px;
 }
 
@@ -199,8 +204,8 @@ table td {
 #footer {
   position: fixed;
   bottom: 0;
-  background: #000;
-  color: #fcfffc;
+  background: black;
+  color: #e5dada;
   width: 100%;
   clear: both;
   padding: 10px 0px;
@@ -210,7 +215,7 @@ table td {
 
 .wafer-speakers .wafer-speakers-logo img {
   border-radius: 50%;
-  border: 4px solid #ff8c28;
+  border: 4px solid #e59500;
   padding: 10px;
 }
 
@@ -231,7 +236,7 @@ table td {
 
 .wafer-profile #profile-avatar img {
   border-radius: 50%;
-  border: 4px solid #ff8c28;
+  border: 4px solid #e59500;
   padding: 10px;
   margin-left: 10px;
 }
@@ -253,9 +258,9 @@ ul.navbar-nav li.icon a {
 
 /* override buttons */
 .btn-primary {
-  background-color: #ff8c28;
+  background-color: #e59500;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: #fcfffc;
+  color: #e5dada;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -263,42 +268,44 @@ ul.navbar-nav li.icon a {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #9a3318;
+  background-color: #a54569;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: #fcfffc;
+  color: #e5dada;
 }
 
 .btn-primary.disabled,
 .btn-primary[disabled] {
-  background-color: #ffa04f;
+  background-color: #ecb145;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: #2d3a3a;
+  color: #6c6d73;
 }
 
 a {
-  color: #1e6b29;
+  color: #a54569;
+  font-weight: bold;
 }
 
 a:hover,
 a:focus {
-  color: #248232;
+  color: #840032;
 }
 
 /* NAV */
 .navbar-dark .navbar-brand,
 .navbar-dark .navbar-nav .nav-link {
-  background-color: #040f0f;
-  color: #fcfffc;
+  background-color: black;
+  color: #e5dada;
   padding: 10px;
   margin: 0px;
   line-height: 30px;
+  font-weight: normal;
 }
 
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-brand:focus,
 .navbar-dark .navbar-nav .nav-link:focus {
-  color: #ff8c28;
+  color: #e59500;
 }
 
 .navbar-dark .navbar-nav li.dropdown > .dropdown-toggle .caret,
@@ -310,9 +317,9 @@ a:focus {
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
-  color: #040f0f;
-  background-color: #ff8c28;
-  background-image: linear-gradient(to left, #ff8c28, #ffa04f);
+  color: #191a24;
+  background-color: #e59500;
+  background-image: linear-gradient(to left, #e59500, #ecb145);
 }
 
 .container-fluid {
@@ -321,7 +328,7 @@ a:focus {
 
 .navbar {
   margin-bottom: 0;
-  background-color: #040f0f ! important;
+  background-color: black ! important;
   font-family: 'Source Sans Pro', 'sans serif';
 }
 
