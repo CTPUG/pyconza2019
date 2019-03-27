@@ -16,7 +16,7 @@ body {
 
 #wrap {
   min-height: 100%;  /* put the background behind the clouds -- see CLOUDS further down */
-  background: url("clouds_bottom.png"), url("clouds_top.png"), url("pattern.png"), #e5dada;
+  background: url("../img/clouds_bottom.png"), url("../img/clouds_top.png"), url("../img/pattern.png"), #e5dada;
   background-repeat: no-repeat, no-repeat, repeat, repeat;
   background-position: bottom center, top center, 0 0, 0 0;
 }
