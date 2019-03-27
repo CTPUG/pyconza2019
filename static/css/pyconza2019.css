@@ -10,7 +10,7 @@ darker  - lighter
 */
 
 html {
-    background: black;
+  background: black;
 }
 
 body {
@@ -261,10 +261,16 @@ ul.navbar-nav li.icon a {
 }
 
 /* override buttons */
+
+ul.btn-group {
+  list-style: none;
+}
+
 .btn-primary {
-  background-color: #e59500;
+  margin: 2px;
+  background-color: #ecb145;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: #e5dada;
+  color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -272,16 +278,38 @@ ul.navbar-nav li.icon a {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #a54569;
+  background-color: #e59500;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: #e5dada;
 }
 
 .btn-primary.disabled,
 .btn-primary[disabled] {
-  background-color: #ecb145;
+  background-color: #6c6d73;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: #6c6d73;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-secondary {
+  margin: 2px;
+  background-color: #5c7486;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active {
+  background-color: #002642;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btn-secondary.disabled,
+.btn-secondary[disabled] {
+  background-color: #6c6d73;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 a {
