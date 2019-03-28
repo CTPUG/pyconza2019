@@ -120,7 +120,6 @@ body {
 #main table td.title {
   background-color: #191a24;
   background-image: linear-gradient(to left, #840032, #191a24);
-  font-family: 'Alegreya' ! important;
   font-size: 16px;
   color: #e5dada;
   line-height: 26px;
@@ -128,7 +127,6 @@ body {
 
 #main table th,
 #main table td.scheduleslot {
-  font-family: 'Alegreya' ! important;
   background: #e59500;
   color: #191a24;
   font-weight: normal;
