@@ -267,7 +267,7 @@ ul.btn-group {
 }
 
 .btn-primary {
-  margin: 2px;
+  margin: 0 0 2px 2px;
   background-color: #ecb145;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   color: #eee7e7;
@@ -291,7 +291,7 @@ ul.btn-group {
 }
 
 .btn-secondary {
-  margin: 2px;
+  margin: 0 0 4px 4px;
   background-color: #5c7486;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   color: #eee7e7;
@@ -371,7 +371,8 @@ a:focus {
 }
 
 .profile-links {
-  padding: 6px;
+  padding: 25px;
+  align-items: flex-end;
 }
 
 @media only screen and (max-device-width:768px) {
