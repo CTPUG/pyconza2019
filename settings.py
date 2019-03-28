@@ -29,8 +29,8 @@ TEMPLATES[0]['DIRS'] = (
 WAFER_MENUS += (
     {"menu": "about", "label": _("About"),
      "items": []},
-    #{"name": "venue", "label": _("Venue"),
-    # "url": reverse_lazy("wafer_page", args=("venue",))},
+    {"name": "venue", "label": _("Venue"),
+     "url": reverse_lazy("wafer_page", args=("venue",))},
     #{"menu": "tickets", "label": _("Tickets"),
     # "items": []},
     {"menu": "sponsors", "label": _("Sponsors"),
