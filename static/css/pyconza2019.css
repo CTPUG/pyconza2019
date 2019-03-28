@@ -270,7 +270,7 @@ ul.btn-group {
   margin: 2px;
   background-color: #ecb145;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: white;
+  color: #eee7e7;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -280,6 +280,7 @@ ul.btn-group {
 .btn-primary.active {
   background-color: #e59500;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: white;
 }
 
 .btn-primary.disabled,
@@ -293,7 +294,7 @@ ul.btn-group {
   margin: 2px;
   background-color: #5c7486;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: white;
+  color: #eee7e7;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -303,6 +304,7 @@ ul.btn-group {
 .btn-secondary.active {
   background-color: #002642;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: white;
 }
 
 .btn-secondary.disabled,
