@@ -108,24 +108,26 @@ body {
 }
 
 #main table th,
-table td {
+#main table td {
   padding: 8px 12px;
   text-align: left;
   border-right: 2px solid #e5dada;
-  background: #6c6d73;
+  background: #ecb145;
   font-size: 16px;
   color: #191a24;
 }
 
 #main table td.title {
-  background: #6c6d73;
-  font-family: 'Alegreya';
+  background-color: #191a24;
+  background-image: linear-gradient(to left, #840032, #191a24);
+  font-family: 'Alegreya' ! important;
   font-size: 16px;
   color: #e5dada;
   line-height: 26px;
 }
 
-#main table th {
+#main table th,
+#main table td.scheduleslot {
   font-family: 'Alegreya';
   background: #e59500;
   color: #191a24;
@@ -133,9 +135,13 @@ table td {
   vertical-align: top;
 }
 
-/* Make links on the table header visbile */
-#main table th a {
-  color: #191a24;
+#main table th a,
+#main table td a {
+  color: #002642;
+}
+
+#main table td.title a {
+  color: #e5dada;
 }
 
 #main table th span {
@@ -143,6 +149,39 @@ table td {
   font-weight: bold;
   color: #191a24;
   line-height: 26px;
+}
+
+/* Highlights */
+
+#main table td.schedule {
+  background: #e5dada;
+}
+
+#main table td.schedule-break {
+  background: #ecb145;
+  text-align: center;
+}
+
+#main table td.schedule-keynote {
+  background: #5c7486;
+  background-image: linear-gradient(to left, #5c7486, #a54569);
+  text-align: center;
+}
+
+#main table td.schedule-keynote a {
+  color: #e5dada;
+}
+
+#main table td.unavailable {
+  background: #002642;
+  font-size: 16px;
+  color: #e59500;
+  line-height: 26px;
+  text-align: center;
+}
+
+#main table td.unavailable a {
+  color: rgba(255, 255, 255, 0.25);
 }
 
 #logos {
@@ -175,28 +214,6 @@ table td {
 
 #credits a {
   color: #e59500;
-}
-
-/* Highlights */
-
-#main table td.schedule {
-  background: #5c7486;
-}
-
-#main table td.schedule-break {
-  background: #e5dada;
-}
-
-#main table td.schedule-keynote {
-  background: #ecb145;
-}
-
-/* Use a darker background for unavailable venues in the schedule */
-#main table td.unavailable {
-  background: #002642;
-  font-size: 16px;
-  color: #191a24;
-  line-height: 26px;
 }
 
 #logo_bottom {
