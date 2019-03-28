@@ -128,7 +128,7 @@ body {
 
 #main table th,
 #main table td.scheduleslot {
-  font-family: 'Alegreya';
+  font-family: 'Alegreya' ! important;
   background: #e59500;
   color: #191a24;
   font-weight: normal;
