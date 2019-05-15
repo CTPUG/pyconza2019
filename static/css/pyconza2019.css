@@ -153,6 +153,7 @@ body {
 
 #main table td.schedule {
   background: #e5dada;
+  border: solid 2px #eee7e7;
 }
 
 #main table td.schedule-break {
