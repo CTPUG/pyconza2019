@@ -120,6 +120,7 @@ def main_conference_tickets_sold():
         'Tutorial: "Python for Analysts" (Wednesday, 9 October, 9:00am - 5:30pm)',
         'Tutorial: "Introduction to Deep Learning" (Wednesday, 9 October, 9:00am - 5:30pm)',
         'Tutorial: "An Introduction to Web Mapping" (Wednesday, 9 October, 9:00am - 5:30pm)',
+        'Sponsored by Obsidian - Tutorial: "Redis with RedisLabs" (Wednesday, 9 October, 9:00am - 1:30pm)',
     ]
     tutorial_type_ids = TicketType.objects.filter(name__in=TUTORIAL_TICKET_TYPES)
 
@@ -148,7 +149,8 @@ MARKITUP_FILTER = (
                         lambda: tickets_sold(['Tutorial: "Python for Analysts" (Wednesday, 9 October, 9:00am - 5:30pm)']),
                     'tutorial_introduction_to_web_mapping_sold':
                         lambda: tickets_sold(['Tutorial: "An Introduction to Web Mapping" (Wednesday, 9 October, 9:00am - 5:30pm)']),
-                    # 'tutorial_geodjango_foss_gis': lambda: tickets_sold([14]),
+                    'tutorial_redis_sold':
+                        lambda: tickets_sold(['Sponsored by Obsidian - Tutorial: "Redis with RedisLabs" (Wednesday, 9 October, 9:00am - 1:30pm)']),
                 }
             }
         },
