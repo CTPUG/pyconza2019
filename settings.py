@@ -137,6 +137,7 @@ MARKITUP_FILTER = (
             "attr_list",
             "mdx_attr_cols",
             "markdown.extensions.tables",
+            "markdown.extensions.codehilite",
             "mdx_variables",
         ],
         "extension_configs": {
